@@ -28,7 +28,7 @@ public override object ProvideValue(IServiceProvider serviceProvider)
     IXamlTypeResolver xamlTypeResolver = serviceProvider.GetService(typeof(IXamlTypeResolver)) as IXamlTypeResolver;
     if (xamlTypeResolver == null)
    {
-        throw new ArgumentException("IXamlTypeResolver"));
+        throw new ArgumentException("IXamlTypeResolver");
     }
 ...
 }
